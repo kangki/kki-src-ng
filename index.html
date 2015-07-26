@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" ng-controller="coreController as core">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="'HELLO ' + title"></title>
+
+    <link href="/kki-src-ng/favicon.png" rel="shortcut icon">
+    <link href="/kki-src-ng/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/kki-src-ng/lib/underscore/underscore-min.js"></script>
+    <script src="/kki-src-ng/lib/jquery/jquery.min.js"></script>
+    <script src="/kki-src-ng/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/kki-src-ng/lib/angular/angular.js"></script>
+
+    <script>
+    var app = angular.module('app',[]);
+
+    angular.element(document).ready(function(){ angular.bootstrap(document, ['app']); });
+
+    app.controller('coreController',['$scope',function($scope){
+        $scope.title = 'INDEX';
+    }]);
+
+    app.controller('topController',['$scope',function($scope){
+
+    }]);
+
+    </script>
+
+</head>
+<body ng-controller="topController as top">
+
+</body>
+</html>
