@@ -1,12 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
 <title>푸통푸통 앵귤라</title>
-
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/white.css" id="theme">
 <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -14,72 +11,37 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<!-- S -->
 
+<!-- front -->
 <section>
     <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="200px" style="border:none;box-shadow:0 0 0;"></p>
+    <p>- kangki -</p>
     <pre><code>
     angular.module('app',[]);
     </code></pre>
 </section>
 
-<section data-markdown="./contents/00.소개.md" data-charset="utf-8"></section>
+<!-- 
+    00.intro 
+-->
+<section data-markdown="./contents/00.intro.md" data-charset="utf-8"></section>
 
-<section data-markdown>
-    <script type="text/template">
-        ## Markdown support
+<!-- 
+    10.environment 
+        11.tools 
+            - git
+            - sublime text & eclipse
+            - nodejs / tomcat
+        12.setting
+-->
 
-        Write content using inline or external Markdown.
-        Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+<section data-markdown="./contents/00.intro.md" data-charset="utf-8"></section>
 
-        ```
-        <section data-markdown>
-          ## Markdown support
 
-          Write content using inline or external Markdown.
-          Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-        </section>
-        ```
-
-        ```
-        class Kki {
-            public static void main(String[] arg){
-                System.out.println("abcd");
-            }
-        }
-        ```
-
-        ```
-        var a = 1;
-        var x = 3;
-
-        function dd() {
-            return 4;
-        }
-
-        dd() + a + x;
-        ```
-    </script>
-</section>
-
+<!-- E -->
 </div>
 </div>
-
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-<script>
-Reveal.initialize({
-    controls: true,
-    progress: true,
-    history: true,
-    center: true,
-
-    transition: 'slide',
-    dependencies: [
-        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
-    ]
-});
-</script>
+<script src="lib/js/head.min.js"></script><script src="js/reveal.js"></script><script>Reveal.initialize({controls: true, progress: true, history: true, center: true, transition: 'slide',dependencies: [{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }]});</script>
 </body>
 </html>
