@@ -1,86 +1,85 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
 
-        <title>푸통푸통 앵귤라</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<title>푸통푸통 앵귤라</title>
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/black.css" id="theme">
-        <link rel="stylesheet" href="lib/css/zenburn.css">
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/white.css" id="theme">
+<link rel="stylesheet" href="lib/css/zenburn.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
 
-                <section>
-                    <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="200px"></p>
-                    <p>AngularJS</p>
-                    <pre><code></code></pre>
-                </section>
+<section>
+    <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="200px" style="border:none;box-shadow:0 0 0;"></p>
+    <pre><code>
+    angular.module('app',[]);
+    </code></pre>
+</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Markdown support
+<section data-markdown="./contents/00.소개.md" data-charset="utf-8"></section>
 
-                        Write content using inline or external Markdown.
-                        Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+<section data-markdown>
+    <script type="text/template">
+        ## Markdown support
 
-                        ```
-                        <section data-markdown>
-                          ## Markdown support
+        Write content using inline or external Markdown.
+        Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
 
-                          Write content using inline or external Markdown.
-                          Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-                        </section>
-                        ```
+        ```
+        <section data-markdown>
+          ## Markdown support
 
-                        ```
-                        class Kki {
-                            public static void main(String[] arg){
-                                System.out.println("abcd");
-                            }
-                        }
-                        ```
+          Write content using inline or external Markdown.
+          Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+        </section>
+        ```
 
-                        ```
-                        var a = 1;
-                        var x = 3;
+        ```
+        class Kki {
+            public static void main(String[] arg){
+                System.out.println("abcd");
+            }
+        }
+        ```
 
-                        function dd() {
-                            return 4;
-                        }
+        ```
+        var a = 1;
+        var x = 3;
 
-                        dd() + a + x;
-                        ```
-                    </script>
-                </section>
+        function dd() {
+            return 4;
+        }
 
-            </div>
-        </div>
+        dd() + a + x;
+        ```
+    </script>
+</section>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
-        <script>
-        
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
+</div>
+</div>
 
-                transition: 'slide',
-                dependencies: [
-                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
-                ]
-            });
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-        </script>
-
-
-    </body>
+    transition: 'slide',
+    dependencies: [
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+});
+</script>
+</body>
 </html>
