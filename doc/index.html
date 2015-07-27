@@ -17,7 +17,7 @@
 <!-- 푸통푸통 앵귤러 -->
 <section>
     <section>
-        <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="200px" style="border:none;box-shadow:0 0 0;"></p>
+        <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="400px" style="border:none;box-shadow:0 0 0;"></p>
         <p>...</p>
     </section>
 
@@ -43,11 +43,8 @@
 
     <section>
         <pre><code>
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="angular.js"></script>
-    <script>
+<script src="angular.js"></script>
+<script>
 angular.module('app',[]);
 
 angular.module('app').controller('controller',['$scope',function($scope){
@@ -57,22 +54,21 @@ angular.module('app').controller('controller',['$scope',function($scope){
 angular.element(document).ready(function(){
     angular.bootstrap(document,['app']);
 });
-    </script>
-</head>
-<body ng-controller="controller">
+</script>
+<div ng-controller="controller">
     <h1 ng-bind="title"></h1>
     <div>
         <p>안녕 {{name}}</p>
         <p><input type="text" ng-model="name"></p>
     </div>
-</body>
-</html>
+</div>
         </code></pre>
 
     </section>
 
     <section data-markdown="./contents/01.hello.md"></section>
 </section>
+
 <section data-markdown="./contents/00.intro.md" data-charset="utf-8"></section>
 
 <!-- 
