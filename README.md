@@ -2,24 +2,29 @@
 src - angularJS
 ssss
 
-소개
-	AngularJS를 기반으로 한
-	Client MVC 모델 구조 설계
+__소개__
 
-개발환경
-	sublime text / eclipse
-	bootstrap
-	nodejs / tomcat
-	spring
-	angular / require / underscore / jquery
+AngularJS 기반으로 Client MVC 구조 설계
 
-Hello
-	Hello Angular
-	Todo Angular
-	Todo Angular + ngRoute
+__개발환경__
 
-	Hello Require
-	Todo Angular + ngRoute + Require
+- sublime text / eclipse
+- bootstrap
+- nodejs / tomcat
+- spring
+- angular / require / underscore / jquery
+
+__Hello__
+
+Hello Angular
+
+Todo Angular
+
+Todo Angular + ngRoute
+
+Hello Require
+
+Todo Angular + ngRoute + Require
 
 Design
 	Tag Structure (Directive) 태그 설계
