@@ -1,6 +1,4 @@
 # srcAngularJS
-src - angularJS
-ssss
 
 __소개__
 
@@ -12,15 +10,13 @@ __개발환경__
 - bootstrap
 - nodejs / tomcat
 - spring
-- angular / require / underscore / jquery
+- angular / require / underscore
 
 __Hello__
 
 Hello Angular
 
-Todo Angular
-
-Todo Angular + ngRoute
+ngRoute
 
 Hello Require
 
