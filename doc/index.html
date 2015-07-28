@@ -18,73 +18,40 @@
 <section>
     <section>
         <p><img src="/kki-src-ng/img/푸통푸통.jpeg" width="400px" style="border:none;box-shadow:0 0 0;"></p>
-        <p>...</p>
-    </section>
-
-    <section>
         <h1>앵귤러</h1>
         <p><pre><code>
-                      angular.module('app',[]);
+                            angular.module('app',[]);
         </code></pre></p>
     </section>
 
     <section>
-        <h1>푸통푸통 앵귤러</h1>
-        <b>(AngularJS 기반 Client 구조 설계)</b>
+        <h4>AngularJS 기반 Client 구조 설계</h4>
     </section>
-
 </section>
 
-<!-- 앵귤러 -->
+<!-- 헬로 -->
 <section>
     <section>
-        <h1>핼로 앵귤러</h1>
-    </section>
-
-    <section>
-        <pre><code>
-<script src="angular.js"></script>
-<script>
-angular.module('app',[]);
-
-angular.module('app').controller('controller',['$scope',function($scope){
-    $scope.title = '푸통푸통 앵귤러';
-}]);
-
-angular.element(document).ready(function(){
-    angular.bootstrap(document,['app']);
-});
-</script>
-<div ng-controller="controller">
-    <h1 ng-bind="title"></h1>
-    <div>
-        <p>안녕 {{name}}</p>
-        <p><input type="text" ng-model="name"></p>
-    </div>
-</div>
-        </code></pre>
-
+        <h1>헬로 앵귤러</h1>
     </section>
 
     <section data-markdown="./contents/01.hello.md"></section>
 </section>
 
-<section data-markdown="./contents/00.intro.md" data-charset="utf-8"></section>
+<section>
+    <section>
+        <h1>TODO 앵귤러</h1>
+        <p>ngRoute를 통한 화면 전환</p>
+    </section>
 
-<!-- 
-    10.environment 
-        11.tools 
-            - git
-            - sublime text & eclipse
-            - nodejs / tomcat
-        12.setting
--->
+    <section data-markdown="./contents/02.todo.md"></section>
+</section>
 
-<section data-markdown="./contents/00.intro.md" data-charset="utf-8"></section>
+
 
 <!-- E -->
 </div>
 </div>
-<script src="lib/js/head.min.js"></script><script src="js/reveal.js"></script><script>Reveal.initialize({controls: true, progress: true, history: true, center: true, transition: 'slide',dependencies: [{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }]});</script>
+<script src="lib/js/head.min.js"></script><script src="js/reveal.js"></script><script>Reveal.initialize({controls:!0,progress:!0,history:!0,center:!0,transition:"slide",dependencies:[{src:"plugin/markdown/marked.js",condition:function(){return!!document.querySelector("[data-markdown]")}},{src:"plugin/markdown/markdown.js",condition:function(){return!!document.querySelector("[data-markdown]")}},{src:"plugin/highlight/highlight.js",async:!0,condition:function(){return!!document.querySelector("pre code")},callback:function(){hljs.initHighlightingOnLoad()}}]});</script>
 </body>
 </html>

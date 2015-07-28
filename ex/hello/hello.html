@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>푸통푸통 앵귤러</title>
+
+	<link href="../../img/favicon.ico" rel="shortcut icon">
+	<link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="../../lib/underscore/underscore-min.js"></script>
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="../../lib/angular/angular.js"></script>
+
+	<script>
+	var app = angular.module('app',[]);
+
+	app.controller('controller',['$scope',function($scope){
+		$scope.title = '푸통푸통 앵귤러';
+		$scope.name = '홍길동';
+		$scope.confirm = function(){
+			alert('안녕 ' + $scope.name);
+		};
+	}]);
+
+
+	angular.element(document).ready(function(){ 
+		angular.bootstrap(document, ['app']); 
+	});
+	</script>
+</head>
+<body>
+<div class="container" ng-controller="controller">
+	<h1 ng-bind="title"></h1>
+
+	<form class="form-horizontal">
+		<div class="form-group form-group-lg">
+			<input type="text" value="{{title}} / {{name}}" class="form-control" readonly> 
+		</div>
+
+		<div class="form-group form-group-lg">
+			<label class="col-xs-2 control-label" for="title">TITLE</label>
+			<div class="col-xs-4">
+				<input type="text" id="title" ng-model="title" class="form-control"> 
+			</div>
+		</div>
+
+		<div class="form-group form-group-lg">
+			<label class="col-xs-2 control-label" for="name">NAME</label>
+			<div class="col-xs-4">
+				<input type="text" id="name" ng-model="name" class="form-control"> 
+			</div>
+		</div>
+
+		<div class="form-group form-group-lg">
+			<label class="col-xs-2 control-label">확인</label>
+			<div class="col-xs-4">
+				<button ng-click="confirm();" class="btn btn-danger btn-lg">안녕 {{name}}</button>
+			</div>
+		</div>
+	</form>
+
+	<a href="../../doc/index.html#/1/1">< 돌아가기</a>
+</div>
+</body>
+</html>
