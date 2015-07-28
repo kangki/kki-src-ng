@@ -7,29 +7,33 @@ angular.element(document).ready(function(){
 });
 
 // Route 설정
-angular.module('app')
-.config(['$routeProvider',function($routeProvider){
+app.config(['$routeProvider',function($routeProvider){
     $routeProvider.when('/book',{
         controller:'viewController',
-        templateUrl:'./book.html'
+        templateUrl:'./view/book.tpl'
     });
 
     $routeProvider.when('/movie',{
         controller:'viewController',
-        templateUrl:'./movie.html'
+        templateUrl:'./view/movie.tpl'
     });
 
     $routeProvider.when('/music',{
         controller:'viewController',
-        templateUrl:'./music.html'
+        templateUrl:'./view/music.tpl'
     });
 
     $routeProvider.otherwise({redirectTo:'/book'});
 }]);
 
 // Controller
-angular.module('app')
-.controller('controller',['$scope',function($scope){
+app.controller('controller',['$scope',function($scope){
     $scope.title = 'ngRoute';
     this.page = 'list';
+}]);
+
+app.controller('viewController',['$scope','$location',function($scope, $location){
+    $scope.ctrl.page = $location.path();
+    $scope.title = $location.path();
+    $scope.list = [{no:1},{no:2},{no:3},{no:4},{no:5},{no:6},{no:7},{no:8},{no:9},{no:10}];
 }]);

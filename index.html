@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html lang="ko" ng-controller="coreController as core">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title ng-bind="'HELLO ' + title"></title>
+    <title>푸통푸통 앵귤러</title>
 
     <link href="./img/favicon.ico" rel="shortcut icon">
     <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="./lib/underscore/underscore-min.js"></script>
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="./lib/angular/angular.js"></script>
-
-    <script>
-    var app = angular.module('app',[]);
-
-    angular.element(document).ready(function(){ angular.bootstrap(document, ['app']); });
-
-    app.controller('coreController',['$scope',function($scope){
-        $scope.title = 'INDEX';
-    }]);
-
-    app.controller('topController',['$scope',function($scope){
-
-    }]);
-
-    </script>
-
 </head>
-<body ng-controller="topController as top">
+<body class="container">
+
+<div class="row">
+  <div class="col-sx-6">
+    <div class="thumbnail">
+      <img src="./img/푸통푸통.png" width="500px;">
+      <div class="caption">
+        <h3>앵귤러(AngularJS 기반 Client 구조 설계)</h3>
+        <p>
+            <a href="./src/index.html" class="btn btn-primary" role="button">SRC</a> 
+            <a href="./doc/index.html" class="btn btn-default" role="button">DOC</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
