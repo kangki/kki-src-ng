@@ -8,8 +8,7 @@ angular.element(document).ready(function(){
 });
 
 // Route 설정
-angular.module('app')
-.config(['$routeProvider',function($routeProvider){
+app.config(['$routeProvider',function($routeProvider){
     $routeProvider.when('/book',{
         controller:'viewController',
         templateUrl:'./view/book.tpl'
@@ -29,8 +28,7 @@ angular.module('app')
 }]);
 
 // Controller
-angular.module('app')
-.controller('controller',['$scope',function($scope){
+app.controller('controller',['$scope',function($scope){
     $scope.title = 'ngRoute';
     this.page = 'list';
 }]);
