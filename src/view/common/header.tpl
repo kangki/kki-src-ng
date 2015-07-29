@@ -1,5 +1,5 @@
 <h1>
-    <img src="../../img/푸통푸통.png" width="100px"> <span ng-bind="title"></span>
+    <img src="./img/푸통푸통.png" width="100px"> <span ng-bind="title"></span>
 </h1>
 
 <form class="form-horizontal">
