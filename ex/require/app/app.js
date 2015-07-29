@@ -29,8 +29,8 @@ app.config(['$routeProvider',function($routeProvider){
 
 // Controller
 app.controller('controller',['$scope',function($scope){
-    $scope.title = 'ngRoute';
-    this.page = 'list';
+    $scope.title = 'Require';
+    this.page = '';
 }]);
 
 return app;
